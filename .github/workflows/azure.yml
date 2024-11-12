@@ -25,11 +25,11 @@ jobs:
           java-version: '8'
 
       # Paso 3: Construir los proyectos
-      - name: Build ProductCatalog with Maven
+      - name: Build project e-commerce with Maven
         run: mvn clean package -DskipTests
         
       # Paso 4: Ejecutar pruebas unitarias para ProductCatalog
-      - name: Run Tests for ProductCatalog
+      - name: Run Tests for project e-commerce
         run: mvn test
 
       # Paso 4: Iniciar sesión en Azure Container Registry (ACR)
