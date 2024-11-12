@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  order-management:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: e-commerce:latest
